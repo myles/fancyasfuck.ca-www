@@ -4,23 +4,23 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "908D03E4-1F77-4110-8877-4FC8DC46653D"
+		"uuidString": "F45EDE3C-54B8-4201-9D05-0A5A4E00C5A6"
 		}
 	],
-"creatorBuild": "26097",
+"creatorBuild": "26148",
 "files": {
+	"\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/.gitattributes",
+		"oF": 1
+		},
 	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/build\/.gitignore",
-		"oF": 1
-		},
-	"\/.sass-lint.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/build\/.sass-lint.yml",
 		"oF": 1
 		},
 	"\/build": {
@@ -29,26 +29,41 @@
 		"oAP": "\/build\/build",
 		"oF": 0
 		},
-	"\/source\/fancy-as-fuck.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/fancy-as-fuck.svg",
+	"\/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/LICENSE",
+		"oF": 1
+		},
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/build\/README.html",
 		"oF": 1,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/source\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
-		"oF": 1
+		"oF": 0
 		},
 	"\/source\/style.scss": {
-		"aP": 0,
-		"bl": 0,
+		"aP": 1,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -65,10 +80,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 531346391,
+	"creationDate": 533946845,
 	"displayValue": "fancyasfuck.ca-www",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-krieger"
+	"iconImageName": "brackets_orange"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1877,7 +1892,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
+		"syntaxCheckerStyle": 3,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
@@ -1939,7 +1954,7 @@
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
-		"autoOutputAction": 2,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.*",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -2044,7 +2059,7 @@
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/design",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"uglifyDefinesString": "",

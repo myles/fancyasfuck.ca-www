@@ -1,11 +1,63 @@
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 body {
-  align-items: center;
+  background-image: linear-gradient(30deg,
+                                    #008bc4, #008bc4 5rem,
+                                    #863486 5rem, #863486 10rem,
+                                    #c73035 10rem, #c73035 15rem,
+                                    #d76d17 15rem, #d76d17 20rem,
+                                    #d99f24 20rem, #d99f24 25rem,
+                                    #519c3d 25rem, #519c3d 30rem,
+                                    #404040 30rem);
+  background-color: #404040;
+  color: #fff;
+  height: 100vh;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1.5rem;
+  margin: 0;
+}
+
+.container {
   display: flex;
   height: 90vh;
   justify-content: center;
+  align-items: center;
 }
 
-img {
+.s-fancy-as-fuck {
   display: block;
-  max-width: 95vw;
+  margin: 0 auto;
+  font-size: 20vw;
+  width: 80vw;
+}
+
+.l {
+  display: inline-block;
+
+  &:hover {
+    animation-name: wiggle;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+  }
 }
