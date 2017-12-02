@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bangers Regular'),
+       local('Bangers-Regular'),
+       url('Bangers-Regular.woff') format('woff');
+}
+
 @keyframes wiggle {
   0% {
     transform: rotate(10deg);
@@ -21,14 +30,17 @@
 }
 
 body {
+  $spacer: 5rem;
+
   background-image: linear-gradient(30deg,
-                                    #008bc4, #008bc4 5rem,
-                                    #863486 5rem, #863486 10rem,
-                                    #c73035 10rem, #c73035 15rem,
-                                    #d76d17 15rem, #d76d17 20rem,
-                                    #d99f24 20rem, #d99f24 25rem,
-                                    #519c3d 25rem, #519c3d 30rem,
-                                    #404040 30rem);
+                                    #404040, #404040 $spacer,
+                                    #008bc4 $spacer, #008bc4 $spacer*2,
+                                    #863486 $spacer*2, #863486 $spacer*3,
+                                    #c73035 $spacer*3, #c73035 $spacer*4,
+                                    #d76d17 $spacer*4, #d76d17 $spacer*5,
+                                    #d99f24 $spacer*5, #d99f24 $spacer*6,
+                                    #519c3d $spacer*6, #519c3d $spacer*7,
+                                    #404040 $spacer*7);
   background-color: #404040;
   color: #fff;
   height: 100vh;

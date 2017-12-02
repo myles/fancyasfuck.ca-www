@@ -12,15 +12,22 @@
 	"\/.gitattributes": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/.gitattributes",
-		"oF": 1
+		"oF": 0
 		},
 	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/build\/.gitignore",
+		"oF": 1
+		},
+	"\/.sass-lint.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/.sass-lint.yml",
 		"oF": 1
 		},
 	"\/build": {
@@ -54,12 +61,30 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/source\/Bangers-Regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/Bangers-Regular.woff",
+		"oF": 0
+		},
+	"\/source\/favicon.png": {
+		"ft": 32768,
+		"iS": 2832,
+		"oA": 0,
+		"oAP": "\/build\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
-		"oF": 0
+		"oF": 1
 		},
 	"\/source\/style.scss": {
 		"aP": 1,
