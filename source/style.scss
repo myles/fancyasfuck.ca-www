@@ -63,10 +63,9 @@ body {
   width: 80vw;
 }
 
-.l {
-  display: inline-block;
-
-  &:hover {
+.s:hover {
+  .l {
+    display: inline-block;
     animation-name: wiggle;
     animation-duration: 1000ms;
     animation-iteration-count: 1;
