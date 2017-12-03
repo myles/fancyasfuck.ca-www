@@ -1,3 +1,15 @@
+$colour-dark: #404040;
+$colour-light: #fff;
+
+$colour-blue: #008bc4;
+$colour-purple: #863486;
+$colour-red: #c73035;
+$colour-orange: #d76d17;
+$colour-yellow: #d99f24;
+$colour-green: #518c3d;
+
+$spacer: 5rem;
+
 @font-face {
   font-family: 'Bangers';
   font-style: normal;
@@ -30,19 +42,9 @@
 }
 
 body {
-  $spacer: 5rem;
-
-  background-image: linear-gradient(30deg,
-                                    #404040, #404040 $spacer,
-                                    #008bc4 $spacer, #008bc4 $spacer*2,
-                                    #863486 $spacer*2, #863486 $spacer*3,
-                                    #c73035 $spacer*3, #c73035 $spacer*4,
-                                    #d76d17 $spacer*4, #d76d17 $spacer*5,
-                                    #d99f24 $spacer*5, #d99f24 $spacer*6,
-                                    #519c3d $spacer*6, #519c3d $spacer*7,
-                                    #404040 $spacer*7);
-  background-color: #404040;
-  color: #fff;
+  background-image: linear-gradient(30deg, $colour-dark, $colour-dark $spacer, $colour-blue $spacer, $colour-blue $spacer*2, $colour-purple $spacer*2, $colour-purple $spacer*3, $colour-red $spacer*3, $colour-red $spacer*4, $colour-orange $spacer*4, $colour-orange $spacer*5, $colour-yellow $spacer*5, $colour-yellow $spacer*6, $colour-green $spacer*6, $colour-green $spacer*7, $colour-dark $spacer*7);
+  background-color: $colour-dark;
+  color: $colour-light;
   height: 100vh;
   font-family: 'Bangers', cursive;
   letter-spacing: 1.5rem;
