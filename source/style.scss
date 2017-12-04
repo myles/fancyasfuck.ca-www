@@ -63,14 +63,18 @@ body {
   margin: 0 auto;
   font-size: 20vw;
   width: 80vw;
+
+  &:hover {
+    .w {
+      display: inline-block;
+      animation-name: wiggle;
+      animation-duration: 1000ms;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+    }
+  }
 }
 
-.s:hover {
-  .l {
-    display: inline-block;
-    animation-name: wiggle;
-    animation-duration: 1000ms;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-  }
+.w {
+  display: inline-block;
 }

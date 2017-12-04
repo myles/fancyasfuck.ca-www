@@ -20,11 +20,13 @@ gulp.task('assets', function() {
       .pipe(reload({ stream: true }));
 });
 
-gulp.task('build', ['styles', 'assets'], function() {
+gulp.task('build', ['styles', 'assets']);
+
+gulp.task('clean', function() {
   del(['build/**']);
 });
 
-gulp.task('deploy', ['build'], function() {
+gulp.task('deploy', ['clean', 'build'], function() {
   gulp.src('build/**')
       .pipe(rsync({
         root: 'build/',
@@ -35,7 +37,7 @@ gulp.task('deploy', ['build'], function() {
       }));
 });
 
-gulp.task('serve', ['build'], function() {
+gulp.task('develop', ['clean', 'build'], function() {
   browserSync({
     server: {
       baseDir: 'build/'
