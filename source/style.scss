@@ -42,35 +42,51 @@ $spacer: 5rem;
 }
 
 body {
-  background-image: linear-gradient(30deg, $colour-dark, $colour-dark $spacer, $colour-blue $spacer, $colour-blue $spacer*2, $colour-purple $spacer*2, $colour-purple $spacer*3, $colour-red $spacer*3, $colour-red $spacer*4, $colour-orange $spacer*4, $colour-orange $spacer*5, $colour-yellow $spacer*5, $colour-yellow $spacer*6, $colour-green $spacer*6, $colour-green $spacer*7, $colour-dark $spacer*7);
   background-color: $colour-dark;
+  background-image: linear-gradient(
+    30deg,
+    $colour-dark,
+    $colour-dark $spacer,
+    $colour-blue $spacer,
+    $colour-blue $spacer * 2,
+    $colour-purple $spacer * 2,
+    $colour-purple $spacer * 3,
+    $colour-red $spacer * 3,
+    $colour-red $spacer * 4,
+    $colour-orange $spacer * 4,
+    $colour-orange $spacer * 5,
+    $colour-yellow $spacer * 5,
+    $colour-yellow $spacer * 6,
+    $colour-green $spacer * 6,
+    $colour-green $spacer * 7,
+    $colour-dark $spacer * 7);
   color: $colour-light;
-  height: 100vh;
   font-family: 'Bangers', cursive;
+  height: 100vh;
   letter-spacing: 1.5rem;
   margin: 0;
 }
 
 .container {
+  align-items: center;
   display: flex;
   height: 90vh;
   justify-content: center;
-  align-items: center;
 }
 
 .s-fancy-as-fuck {
   display: block;
-  margin: 0 auto;
   font-size: 20vw;
+  margin: 0 auto;
   width: 80vw;
 
   &:hover {
     .l {
-      display: inline-block;
-      animation-name: wiggle;
       animation-duration: 1000ms;
       animation-iteration-count: 1;
+      animation-name: wiggle;
       animation-timing-function: ease-in-out;
+      display: inline-block;
     }
   }
 }

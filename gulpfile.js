@@ -2,7 +2,8 @@
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    rsync = require('gulp-rsync'),
+    autoprefixer = require('gulp-autoprefixer'),
+    cssnano = require('gulp-cssnano'),
     del = require('del'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
@@ -10,6 +11,11 @@ var gulp = require('gulp'),
 gulp.task('styles', function() {
   gulp.src('source/*.scss')
       .pipe(sass().on('error', sass.logError))
+      .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+      }))
+      .pipe(cssnano())
       .pipe(gulp.dest('build/'))
       .pipe(reload({ stream: true }));
 });
@@ -26,18 +32,7 @@ gulp.task('clean', function() {
   del(['build/**']);
 });
 
-gulp.task('deploy', ['clean', 'build'], function() {
-  gulp.src('build/**')
-      .pipe(rsync({
-        root: 'build/',
-        hostname: 'gorilla',
-        destination: '/srv/www/fancyasfuck.ca/www/html',
-        clean: true,
-        exclude: ['.DS_Store']
-      }));
-});
-
-gulp.task('develop', ['clean', 'build'], function() {
+gulp.task('start', ['clean', 'build'], function() {
   browserSync({
     server: {
       baseDir: 'build/'
