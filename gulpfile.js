@@ -3,7 +3,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    cssnano = require('gulp-cssnano'),
     del = require('del'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
@@ -15,7 +14,6 @@ gulp.task('styles', function() {
         browsers: ['last 2 versions'],
         cascade: false
       }))
-      .pipe(cssnano())
       .pipe(gulp.dest('build/'))
       .pipe(reload({ stream: true }));
 });
